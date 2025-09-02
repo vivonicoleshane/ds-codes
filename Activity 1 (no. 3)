@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 1, product = 1;
+
+    while (x <= 5) {
+        product *= x;  
+        x++;
+    }
+
+    cout << "Product of numbers from 1 to 5 = " << product << endl;
+
+    return 0;
+}
