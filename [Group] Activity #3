@@ -1,0 +1,20 @@
+// Vivo, Nicole Shane B.
+// BSIT-2J
+// ACTIVITY 3
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Input values
+    int hours = 9;      
+    int minutes = 30;   
+
+    int totalMinutes = (hours * 60) + minutes;
+
+    cout << "Input hours: " << hours << endl;
+    cout << "Input minutes: " << minutes << endl;
+    cout << "Total: " << totalMinutes << " minutes" << endl;
+
+    return 0;
+}
