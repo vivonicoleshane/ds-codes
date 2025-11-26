@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int list[5] = {10, 20, 30, 40, 50};
+
+    cout << "Accessing only valid indices:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "list[" << i << "] = " << list[i] << endl;
+    }
+
+    // Prevent invalid access
+    int index;
+    cout << "\nEnter index (0-4): ";
+    cin >> index;
+
+    if (index >= 0 && index < 5) {
+        cout << "Value at list[" << index << "] = " << list[index] << endl;
+    } else {
+        cout << "Error: Index out of bounds!" << endl;
+    }
+
+    return 0;
+}
